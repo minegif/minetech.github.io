@@ -61,36 +61,92 @@ document.addEventListener('DOMContentLoaded', updateCartIcon);
 
 //Update cart page
 function updateCartPage() {
-    const cart = getCart();
-    const cartItems = document.getElementById('cart-items');
-    cartItems.innerHTML = '';
+    try {
+        const cart = getCart();
+        const cartItems = document.getElementById('cart-items');
+        const totalElement = document.getElementById('total-amount');
+        
+        // Check if elements exist
+        if (!cartItems || !totalElement) {
+            console.error('Required cart elements not found');
+            return;
+        }
 
-    let totalAmount = 0;
+        // Clear previous items
+        cartItems.innerHTML = '';
 
-    cart.forEach(item => {
-        const itemTotal = item.price * item.quantity;
-        totalAmount += itemTotal;
+        // Handle empty cart
+        if (cart.length === 0) {
+            cartItems.innerHTML = `
+                <div class="empty-cart-message">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Your cart is empty</p>
+                    <a href="products.html" class="btn btn-primary">Continue Shopping</a>
+                </div>
+            `;
+            totalElement.textContent = '0';
+            return;
+        }
 
-        const cartItem = document.createElement('div');
-        cartItem.classList.add('cart-item');
+        let grandTotal = 0;
+        let html = '';
 
-        const itemImage = document.createElement('img');
-        itemImage.src = item.image;
-        itemImage.alt = item.name;
-        itemImage.classList.add('cart-item-image');
+        cart.forEach(item => {
+            const itemTotal = item.price * item.quantity;
+            grandTotal += itemTotal;
 
-        const itemDetails = document.createElement('div');
-        itemDetails.textContent = `${item.name} - UGX ${item.price} x ${item.quantity} = UGX ${itemTotal}`;
-        itemDetails.classList.add('cart-item-details');
+            html += `
+                <div class="cart-item" data-id="${item.id}">
+                    <div class="cart-item-image-container">
+                        <img src="${item.image}" alt="${item.name}" class="cart-item-image" onerror="this.src='assets/images/default-product.jpg'">
+                    </div>
+                    <div class="cart-item-details">
+                        <h4 class="product-title">${item.name}</h4>
+                        <div class="price-info">
+                            <span class="unit-price">UGX ${item.price.toLocaleString()}</span>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus" onclick="updateCartItemQuantity('${item.id}', ${item.quantity - 1})">-</button>
+                                <span class="quantity">${item.quantity}</span>
+                                <button class="qty-btn plus" onclick="updateCartItemQuantity('${item.id}', ${item.quantity + 1})">+</button>
+                            </div>
+                            <span class="item-total">UGX ${itemTotal.toLocaleString()}</span>
+                        </div>
+                    </div>
+                    <button class="remove-item" onclick="removeFromCart('${item.id}')">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            `;
+        });
 
-        cartItem.appendChild(itemImage);
-        cartItem.appendChild(itemDetails);
-        cartItems.appendChild(cartItem);
-    });
+        cartItems.innerHTML = html;
+        totalElement.textContent = `UGX ${grandTotal.toLocaleString()}`;
 
-    document.getElementById('total-amount').textContent = totalAmount;
+    } catch (error) {
+        console.error('Error updating cart page:', error);
+        // Fallback display
+        document.getElementById('cart-items').innerHTML = `
+            <div class="error-message">
+                <p>Unable to load cart contents. Please try again.</p>
+            </div>
+        `;
+    }
 }
 
+// New supporting functions
+function updateCartItemQuantity(productId, newQuantity) {
+    if (newQuantity < 1) return;
+    
+    const cart = getCart();
+    const itemIndex = cart.findIndex(item => item.id === productId);
+    
+    if (itemIndex > -1) {
+        cart[itemIndex].quantity = newQuantity;
+        setCart(cart);
+        updateCartPage();
+        updateCartIcon();
+    }
+}
 function clearCart() {
     setCart([]);
     updateCartIcon();
