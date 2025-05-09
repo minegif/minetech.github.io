@@ -156,6 +156,5 @@ function clearCart() {
 if (document.getElementById('cart-items')) {
     updateCartPage();
 }
-     document.addEventListener('DOMContentLoaded', () => {
-    updateCartPage();  // Run this only if it's the cart page
-});
+console.log(localStorage.getItem('cart'));
+     
