@@ -16,11 +16,30 @@ function updateQuantity(productId, change) {
             quantityInput.value = currentQuantity;
             
           quantityPrice.textContent = "UGX " + (currentQuantity * price).toLocaleString();
+           animatePriceChange(quantityPrice); 
             
-            
-
         }
-        
+
+function animatePriceChange(element, newValue) {
+    // Add animation class
+    element.classList.add('price-change');
+    
+    // Update value halfway through animation
+    setTimeout(() => {
+        element.textContent = newValue;
+    }, 250); // Matches the 50% point of our 0.5s animation
+    
+    // Remove class after animation completes
+    setTimeout(() => {
+        element.classList.remove('price-change');
+    }, 500);
+}
+
+
+function vibrate() {
+    // 10ms vibration if supported
+    if (window.navigator.vibrate) window.navigator.vibrate(10);
+}
         
   function addToCart(productName, productPrice, productImage) {
     const quantity = parseInt(document.getElementById('quantity-product1').value);
