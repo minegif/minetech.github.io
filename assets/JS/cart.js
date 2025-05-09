@@ -22,35 +22,32 @@ function updateQuantity(productId, change) {
         }
         
         
-   function addToCart(productName, productPrice, productImage) {
-    let cart = getCart();
-    const productIndex = cart.findIndex(item => item.name === productName);
-    
-    if (productIndex > -1) {
-        cart[productIndex].quantity += 1;
-    } else {
-        cart.push({ name: productName, price: productPrice, image: productImage, quantity: 1 });
-    }
-    
-    setCart(cart);
-    updateCartIcon();
+  function addToCart(productName, productPrice, productImage) {
+    const quantity = parseInt(document.getElementById('quantity-product1').value);
+    let cart = getCart();
+    const productIndex = cart.findIndex(item => item.name === productName);
+    
+    if (productIndex > -1) {
+        cart[productIndex].quantity += quantity;
+    } else {
+        cart.push({ 
+            name: productName, 
+            price: productPrice, 
+            image: productImage, 
+            quantity: quantity 
+        });
+    }
+    
+    setCart(cart);
+    updateCartIcon();
+    console.log("Current cart:", getCart());  // Debug log
 }
-
 function getCart() {
-    const cartCookie = getCookie('cart');
-    return cartCookie ? JSON.parse(cartCookie) : [];
+    return JSON.parse(localStorage.getItem('cart')) || [];
 }
 
 function setCart(cart) {
-    const expires = new Date();
-    expires.setDate(expires.getDate() + 1);
-    document.cookie = `cart=${JSON.stringify(cart)};expires=${expires.toUTCString()};path=/`;
-}
-
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 function updateCartIcon() {
