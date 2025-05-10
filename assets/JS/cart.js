@@ -16,7 +16,8 @@ function updateQuantity(productId, change) {
             quantityInput.value = currentQuantity;
            const formattedPrice = currentQuantity * price; 
           quantityPrice.textContent = "UGX " + formattedPrice.toLocaleString();
-           animatePriceChange(quantityPrice, formattedPrice); 
+           console.log('Element before animation:', element, 'Type:', element.constructor.name);
+           animatePriceChange(element, formattedPrice); 
             
         }
 
