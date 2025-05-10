@@ -14,9 +14,9 @@ function updateQuantity(productId, change) {
             }
 
             quantityInput.value = currentQuantity;
-            
-          quantityPrice.textContent = "UGX " + (currentQuantity * price).toLocaleString();
-           animatePriceChange(quantityPrice, quantityPrice); 
+           const formattedPrice = currentQuantity * price; 
+          quantityPrice.textContent = "UGX " + formattedPrice.toLocaleString();
+           animatePriceChange(quantityPrice, formattedPrice); 
             
         }
 
