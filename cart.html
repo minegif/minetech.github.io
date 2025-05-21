@@ -144,6 +144,22 @@
         </div>
     </div>
 </section>
+
+	<!-- Load these conditionally -->
+<script>
+  // Only load popup.js if needed element exists
+  if (document.getElementById('popup-element')) {
+    document.write('<script src="assets/bootstrap/js/popup.js"><\/script>');
+  }
+  
+  // Same for cookies.js
+  if (document.getElementById('cookies-banner')) {
+    document.write('<script src="assets/bootstrap/js/cookies.js"><\/script>');
+  }
+</script>
+
+<!-- Always load cart.js LAST -->
+
 	
 	<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/parallax/jarallax.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-tabs/mbr-tabs.js"></script>  <script src="assets/masonry/masonry.pkgd.min.js"></script>  <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/mbr-tabs/tabs.js"></script>
 	<script src="assets/mbr-tabs/show.js"></script></script><script src="assets/bootstrap/js/emailer.js"></script>
