@@ -78,6 +78,32 @@ function updateCartIcon() {
 document.addEventListener('DOMContentLoaded', updateCartIcon);
 
 
+function removeItem(productId) {
+    let cart = getCart();
+    cart = cart.filter(item => item.id !== productId);
+    setCart(cart);
+    
+    // Visual feedback
+    const itemElement = document.querySelector(`[data-id="${productId}"]`);
+    if (itemElement) {
+        itemElement.style.opacity = '0';
+        setTimeout(() => {
+            updateCartPage();
+            updateCartIcon();
+        }, 300);
+    }
+}
+
+// Optional visual effect
+function highlightUpdatedItem(productId) {
+    const item = document.querySelector(`[data-id="${productId}"]`);
+    if (item) {
+        item.style.backgroundColor = '#f8f8f8';
+        setTimeout(() => item.style.backgroundColor = '', 500);
+    }
+}
+
+
 //Update cart page
 function updateCartPage() {
     try {
@@ -124,14 +150,14 @@ function updateCartPage() {
                         <div class="price-info">
                             <span class="unit-price">UGX ${item.price.toLocaleString()}</span>
                             <div class="quantity-controls">
-                                <button class="qty-btn minus" onclick="updateCartItemQuantity('${item.id}', ${item.quantity - 1})">-</button>
+                                <button class="qty-btn minus" onclick="updateQuantity('${item.id}', ${item.quantity - 1})">-</button>
                                 <span class="quantity">${item.quantity}</span>
-                                <button class="qty-btn plus" onclick="updateCartItemQuantity('${item.id}', ${item.quantity + 1})">+</button>
+                                <button class="qty-btn plus" onclick="updateQuantity('${item.id}', ${item.quantity + 1})">+</button>
                             </div>
                             <span class="item-total">UGX ${itemTotal.toLocaleString()}</span>
                         </div>
                     </div>
-                    <button class="remove-item" onclick="removeFromCart('${item.id}')">
+                    <button class="remove-item" onclick="removeItem('${item.id}')">
                         <i class="fas fa-trash"></i>
                     </button>
                 </div>
