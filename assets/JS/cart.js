@@ -59,6 +59,16 @@ function vibrate() {
     }
     
     setCart(cart);
+
+              if (window.confetti) { // Only fires if confetti.js is loaded
+    confetti({ 
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  }
+}
+              
     updateCartIcon();
     console.log("Current cart:", getCart());  // Debug log
 }
@@ -80,7 +90,10 @@ document.addEventListener('DOMContentLoaded', updateCartIcon);
 
 
 //Update cart page
-function updateCartPage() {
+function updateCartPage() 
+{
+  const container = document.getElementById('cart-items');
+  container.classList.add('loading-cart');{
     try {
         const cart = getCart();
         const cartItems = document.getElementById('cart-items');
@@ -152,7 +165,10 @@ function updateCartPage() {
         `;
     }
 }
-
+setTimeout(() => {
+    container.classList.remove('loading-cart');
+  }, 500);
+}
 // New supporting functions
 function updateCartItemQuantity(productId, newQuantity) {
     if (newQuantity < 1) return;
@@ -167,6 +183,26 @@ function updateCartItemQuantity(productId, newQuantity) {
         updateCartIcon();
     }
 }
+
+// Replace your removeFromCart() function with:
+function removeFromCart(productId) {
+  let cart = getCart();
+  cart = cart.filter(item => item.id !== productId);
+  setCart(cart);
+  
+  // Instant UI update (no reload needed)
+  updateCartPage(); // Refresh the display
+  updateCartIcon(); // Update counter
+  
+  // Optional: Add visual feedback
+  const itemElement = document.querySelector(`[data-id="${productId}"]`);
+  if (itemElement) {
+    itemElement.style.transition = 'all 0.3s';
+    itemElement.style.opacity = '0';
+    setTimeout(() => itemElement.remove(), 300);
+  }
+}
+
 function clearCart() {
     setCart([]);
     updateCartIcon();
