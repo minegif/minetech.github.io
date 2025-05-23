@@ -17,23 +17,22 @@ function updateQuantity(productId, change) {
            const formattedPrice = currentQuantity * price; 
           quantityPrice.textContent = "UGX " + formattedPrice.toLocaleString();
            console.log('Element before animation:', element, 'Type:', element.constructor.name);
-           animatePriceChange(element, formattedPrice); 
+           // Inside updateQuantity():
+animatePriceChange(quantityPrice, "UGX " + (currentQuantity * price).toLocaleString());
             
         }
 
 function animatePriceChange(element, newValue) {
-    // Add animation class
-    element.classList.add('price-change');
-    
-    // Update value halfway through animation
+  // Flash animation
+  element.style.transition = 'all 0.3s';
+  element.style.color = '#2ecc71'; // Green highlight
+  
+  setTimeout(() => {
+    element.textContent = newValue;
     setTimeout(() => {
-        element.textContent = newValue;
-    }, 250); // Matches the 50% point of our 0.5s animation
-    
-    // Remove class after animation completes
-    setTimeout(() => {
-        element.classList.remove('price-change');
-    }, 500);
+      element.style.color = ''; // Revert color
+    }, 300);
+  }, 10);
 }
 
 
