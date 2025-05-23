@@ -17,9 +17,25 @@ function updateQuantity(productId, change) {
            const formattedPrice = currentQuantity * price; 
           quantityPrice.textContent = "UGX " + formattedPrice.toLocaleString();
            console.log('Element before animation:', element, 'Type:', element.constructor.name);
- 
+           animatePriceChange(element, formattedPrice); 
             
         }
+
+function animatePriceChange(element, newValue) {
+    // Add animation class
+    element.classList.add('price-change');
+    
+    // Update value halfway through animation
+    setTimeout(() => {
+        element.textContent = newValue;
+    }, 250); // Matches the 50% point of our 0.5s animation
+    
+    // Remove class after animation completes
+    setTimeout(() => {
+        element.classList.remove('price-change');
+    }, 500);
+}
+
 
 function vibrate() {
     // 10ms vibration if supported
@@ -43,16 +59,6 @@ function vibrate() {
     }
     
     setCart(cart);
-
-              if (window.confetti) { // Only fires if confetti.js is loaded
-    confetti({ 
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 }
-    });
-  }
-}
-              
     updateCartIcon();
     console.log("Current cart:", getCart());  // Debug log
 }
@@ -74,10 +80,7 @@ document.addEventListener('DOMContentLoaded', updateCartIcon);
 
 
 //Update cart page
-function updateCartPage() 
-{
-  const container = document.getElementById('cart-items');
-  container.classList.add('loading-cart');{
+function updateCartPage() {
     try {
         const cart = getCart();
         const cartItems = document.getElementById('cart-items');
@@ -149,10 +152,7 @@ function updateCartPage()
         `;
     }
 }
-setTimeout(() => {
-    container.classList.remove('loading-cart');
-  }, 500);
-}
+
 // New supporting functions
 function updateCartItemQuantity(productId, newQuantity) {
     if (newQuantity < 1) return;
@@ -167,7 +167,6 @@ function updateCartItemQuantity(productId, newQuantity) {
         updateCartIcon();
     }
 }
-
 function clearCart() {
     setCart([]);
     updateCartIcon();
