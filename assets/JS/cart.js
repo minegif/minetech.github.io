@@ -168,25 +168,6 @@ function updateCartItemQuantity(productId, newQuantity) {
     }
 }
 
-// Replace your removeFromCart() function with:
-function removeFromCart(productId) {
-  let cart = getCart();
-  cart = cart.filter(item => item.id !== productId);
-  setCart(cart);
-  
-  // Instant UI update (no reload needed)
-  updateCartPage(); // Refresh the display
-  updateCartIcon(); // Update counter
-  
-  // Optional: Add visual feedback
-  const itemElement = document.querySelector(`[data-id="${productId}"]`);
-  if (itemElement) {
-    itemElement.style.transition = 'all 0.3s';
-    itemElement.style.opacity = '0';
-    setTimeout(() => itemElement.remove(), 300);
-  }
-}
-
 function clearCart() {
     setCart([]);
     updateCartIcon();
