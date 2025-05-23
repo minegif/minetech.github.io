@@ -17,24 +17,9 @@ function updateQuantity(productId, change) {
            const formattedPrice = currentQuantity * price; 
           quantityPrice.textContent = "UGX " + formattedPrice.toLocaleString();
            console.log('Element before animation:', element, 'Type:', element.constructor.name);
-           // Inside updateQuantity():
-animatePriceChange(quantityPrice, "UGX " + (currentQuantity * price).toLocaleString()); 
+ 
             
         }
-
-function animatePriceChange(element, newValue) {
-  // Flash animation
-  element.style.transition = 'all 0.3s';
-  element.style.color = '#2ecc71'; // Green highlight
-  
-  setTimeout(() => {
-    element.textContent = newValue;
-    setTimeout(() => {
-      element.style.color = ''; // Revert color
-    }, 300);
-  }, 10);
-}
-
 
 function vibrate() {
     // 10ms vibration if supported
