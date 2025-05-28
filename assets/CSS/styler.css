@@ -1,3 +1,29 @@
+.stats{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    width: 80%;
+    padding: 40px 20px 0 40px;
+    background: rgb(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.icon-wrapper{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+
 .footer{
     margin-top: 70px;
     background: url(3D-graphics-pattern-design.jpg);
