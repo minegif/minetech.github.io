@@ -1,5 +1,6 @@
 .link-container {
-  display: inline-block; /* Ensure the container only takes up as much width as necessary */
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .link-container a {
@@ -9,12 +10,12 @@
 
 .link-container img {
   vertical-align: middle; /* Align the image vertically with the link text */
+  width: 20px;
+  margin-left: 5px;
 }
 
 .text-success img {
   width: 30px; 
-  margin-left: 5px; 
-  padding: 20px;
 }
 
 
