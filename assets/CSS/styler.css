@@ -1,8 +1,3 @@
-.box2 .contacts{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    }
 .footer{
     margin-top: 70px;
     background: url(3D-graphics-pattern-design.jpg);
@@ -17,19 +12,6 @@
 transform: scale(0.4);
 margin: 0 auto;
 display: block;
-}
-
-.icon-wrapper{
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.containerx{
-    display: flex;
-    flex-direction: row;
-   justify-content: center;
 }
 
 .counter-section {
