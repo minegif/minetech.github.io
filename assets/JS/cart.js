@@ -14,43 +14,60 @@ function updateQuantity(productId, change) {
             }
 
             quantityInput.value = currentQuantity;
+           const formattedPrice = currentQuantity * price; 
+          quantityPrice.textContent = "UGX " + formattedPrice.toLocaleString();
+           console.log('Element before animation:', element, 'Type:', element.constructor.name);
+           animatePriceChange(element, formattedPrice); 
             
-          quantityPrice.textContent = "UGX " + (currentQuantity * price).toLocaleString();
-            
-            
-
         }
-        
-        
-   function addToCart(productName, productPrice, productImage) {
-    let cart = getCart();
-    const productIndex = cart.findIndex(item => item.name === productName);
-    
-    if (productIndex > -1) {
-        cart[productIndex].quantity += 1;
-    } else {
-        cart.push({ name: productName, price: productPrice, image: productImage, quantity: 1 });
-    }
-    
-    setCart(cart);
-    updateCartIcon();
+
+function animatePriceChange(element, newValue) {
+    // Add animation class
+    element.classList.add('price-change');
+    
+    // Update value halfway through animation
+    setTimeout(() => {
+        element.textContent = newValue;
+    }, 250); // Matches the 50% point of our 0.5s animation
+    
+    // Remove class after animation completes
+    setTimeout(() => {
+        element.classList.remove('price-change');
+    }, 500);
 }
 
+
+function vibrate() {
+    // 10ms vibration if supported
+    if (window.navigator.vibrate) window.navigator.vibrate(10);
+}
+        
+  function addToCart(productName, productPrice, productImage) {
+    const quantity = parseInt(document.getElementById('quantity-product1').value);
+    let cart = getCart();
+    const productIndex = cart.findIndex(item => item.name === productName);
+    
+    if (productIndex > -1) {
+        cart[productIndex].quantity += quantity;
+    } else {
+        cart.push({ 
+            name: productName, 
+            price: productPrice, 
+            image: productImage, 
+            quantity: quantity 
+        });
+    }
+    
+    setCart(cart);
+    updateCartIcon();
+    console.log("Current cart:", getCart());  // Debug log
+}
 function getCart() {
-    const cartCookie = getCookie('cart');
-    return cartCookie ? JSON.parse(cartCookie) : [];
+    return JSON.parse(localStorage.getItem('cart')) || [];
 }
 
 function setCart(cart) {
-    const expires = new Date();
-    expires.setDate(expires.getDate() + 1);
-    document.cookie = `cart=${JSON.stringify(cart)};expires=${expires.toUTCString()};path=/`;
-}
-
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 function updateCartIcon() {
@@ -64,36 +81,92 @@ document.addEventListener('DOMContentLoaded', updateCartIcon);
 
 //Update cart page
 function updateCartPage() {
-    const cart = getCart();
-    const cartItems = document.getElementById('cart-items');
-    cartItems.innerHTML = '';
+    try {
+        const cart = getCart();
+        const cartItems = document.getElementById('cart-items');
+        const totalElement = document.getElementById('total-amount');
+        
+        // Check if elements exist
+        if (!cartItems || !totalElement) {
+            console.error('Required cart elements not found');
+            return;
+        }
 
-    let totalAmount = 0;
+        // Clear previous items
+        cartItems.innerHTML = '';
 
-    cart.forEach(item => {
-        const itemTotal = item.price * item.quantity;
-        totalAmount += itemTotal;
+        // Handle empty cart
+        if (cart.length === 0) {
+            cartItems.innerHTML = `
+                <div class="empty-cart-message">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Your cart is empty</p>
+                    <a href="products.html" class="btn btn-primary">Continue Shopping</a>
+                </div>
+            `;
+            totalElement.textContent = '0';
+            return;
+        }
 
-        const cartItem = document.createElement('div');
-        cartItem.classList.add('cart-item');
+        let grandTotal = 0;
+        let html = '';
 
-        const itemImage = document.createElement('img');
-        itemImage.src = item.image;
-        itemImage.alt = item.name;
-        itemImage.classList.add('cart-item-image');
+        cart.forEach(item => {
+            const itemTotal = item.price * item.quantity;
+            grandTotal += itemTotal;
 
-        const itemDetails = document.createElement('div');
-        itemDetails.textContent = `${item.name} - UGX ${item.price} x ${item.quantity} = UGX ${itemTotal}`;
-        itemDetails.classList.add('cart-item-details');
+            html += `
+                <div class="cart-item" data-id="${item.id}">
+                    <div class="cart-item-image-container">
+                        <img src="${item.image}" alt="${item.name}" class="cart-item-image" onerror="this.src='assets/images/default-product.jpg'">
+                    </div>
+                    <div class="cart-item-details">
+                        <h4 class="product-title">${item.name}</h4>
+                        <div class="price-info">
+                            <span class="unit-price">UGX ${item.price.toLocaleString()}</span>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus" onclick="updateCartItemQuantity('${item.id}', ${item.quantity - 1})">-</button>
+                                <span class="quantity">${item.quantity}</span>
+                                <button class="qty-btn plus" onclick="updateCartItemQuantity('${item.id}', ${item.quantity + 1})">+</button>
+                            </div>
+                            <span class="item-total">UGX ${itemTotal.toLocaleString()}</span>
+                        </div>
+                    </div>
+                    <button class="remove-item" onclick="removeFromCart('${item.id}')">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            `;
+        });
 
-        cartItem.appendChild(itemImage);
-        cartItem.appendChild(itemDetails);
-        cartItems.appendChild(cartItem);
-    });
+        cartItems.innerHTML = html;
+        totalElement.textContent = `UGX ${grandTotal.toLocaleString()}`;
 
-    document.getElementById('total-amount').textContent = totalAmount;
+    } catch (error) {
+        console.error('Error updating cart page:', error);
+        // Fallback display
+        document.getElementById('cart-items').innerHTML = `
+            <div class="error-message">
+                <p>Unable to load cart contents. Please try again.</p>
+            </div>
+        `;
+    }
 }
 
+// New supporting functions
+function updateCartItemQuantity(productId, newQuantity) {
+    if (newQuantity < 1) return;
+    
+    const cart = getCart();
+    const itemIndex = cart.findIndex(item => item.id === productId);
+    
+    if (itemIndex > -1) {
+        cart[itemIndex].quantity = newQuantity;
+        setCart(cart);
+        updateCartPage();
+        updateCartIcon();
+    }
+}
 function clearCart() {
     setCart([]);
     updateCartIcon();
@@ -103,6 +176,5 @@ function clearCart() {
 if (document.getElementById('cart-items')) {
     updateCartPage();
 }
-     document.addEventListener('DOMContentLoaded', () => {
-    updateCartPage();  // Run this only if it's the cart page
-});
+console.log(localStorage.getItem('cart'));
+     

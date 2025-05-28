@@ -7,6 +7,68 @@
   height: 100%;
 }
 
+/* Add to your stylesheet */
+.price-animator {
+    display: inline-block;
+    min-width: 120px; /* Match your price width */
+    text-align: right;
+}
+
+.price-change {
+    animation: pulseUpdate 0.5s ease-in-out;
+    display: inline-block;
+}
+
+@keyframes pulseUpdate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); color: #2ecc71; }
+    100% { transform: scale(1); }
+}
+
+
+.toast-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    z-index: 1000;
+    animation: fadeIn 0.3s, fadeOut 0.3s 2.7s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    gap: 20px;
+}
+
+.cart-item-image {
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    margin-left: auto;
+}
+
 
 .cid-lm0h9EZQsf .card-wrapper {
   background: #ffffff;

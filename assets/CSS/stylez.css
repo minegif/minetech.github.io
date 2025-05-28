@@ -1,20 +1,172 @@
+/* Center alignment for footer */
+#footer {
+  text-align: center;
+}
+
+.footer-content {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-menu {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.header-menu a {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.icons-list.social {
+  display: inline-block;
+  margin: 15px auto 0;
+  text-align: center;
+}
+
+.image-block.footer {
+  display: block;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
 .link-container {
-  display: inline-block; /* Ensure the container only takes up as much width as necessary */
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .link-container a {
-  display: inline-block; /* Make the link behave like an inline element */
+  display: inline /* Make the link behave like an inline element */
   vertical-align: middle; /* Align the link vertically with the image */
 }
 
 .link-container img {
   vertical-align: middle; /* Align the image vertically with the link text */
+  width: 20px;
+  margin-left: 5px;
 }
 
 .text-success img {
   width: 30px; 
-  margin-left: 5px; 
-  padding: 20px;
+}
+
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.loading-cart {
+  animation: pulse 1.5s infinite;
+}
+
+/* Add to your stylesheet */
+.price-animator {
+    display: inline-block;
+    min-width: 120px; /* Match your price width */
+    text-align: right;
+}
+
+.price-change {
+    animation: pulseUpdate 0.5s ease-in-out;
+    display: inline-block;
+}
+
+@keyframes pulseUpdate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); color: #2ecc71; }
+    100% { transform: scale(1); }
+}
+
+
+.cart-item-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain; /* Keeps aspect ratio */
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.qty-controls button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.qty-controls button:hover {
+  background: #e9e9e9;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.item-price {
+  font-weight: bold;
+  margin-left: auto; /* Pushes price to right */
+  min-width: 120px;
+  text-align: right;
+}
+
+.toast-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    z-index: 1000;
+    animation: fadeIn 0.3s, fadeOut 0.3s 2.7s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    gap: 20px;
+}
+
+.cart-item-image {
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    margin-left: auto;
 }
 
 
