@@ -18,7 +18,7 @@
     gap: 3px;
 }
 
-.container{
+.container-foot{
     display: flex;
     flex-direction: row;
    justify-content: center;
