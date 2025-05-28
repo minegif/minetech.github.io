@@ -3,7 +3,7 @@
 }
 
 .link-container a {
-  display: inline-block; /* Make the link behave like an inline element */
+  display: inline /* Make the link behave like an inline element */
   vertical-align: middle; /* Align the link vertically with the image */
 }
 
