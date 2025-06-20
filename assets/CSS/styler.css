@@ -5,7 +5,7 @@
     transform: translate(-50%, 5%);
     width: 80%;
     padding: 40px 20px 0 40px;
-    background: rgb(0, 0, 0, 0.8);
+    background: rgba(180, 179, 179, 0.8);
     box-sizing: border-box;
     text-align: center;
     box-shadow: 0 15px 25px rgb(0, 0, 0, 0.5);
@@ -15,8 +15,8 @@
 .icon-wrapper{
     padding-left: 40px;
     display: flex;
-    flex-direction: column;
-    gap: 3px;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .container-foot{
@@ -25,36 +25,20 @@
    justify-content: center;
 }
 
-.footer{
-    margin-top: 70px;
-    background: url(3D-graphics-pattern-design.jpg);
-    background-size: cover;
-    width: auto;
-    height: auto;
-    padding: 1px; 
-    display: block;
-}
-
-.footer img{
-transform: scale(0.4);
-margin: 0 auto;
-display: block;
-}
-
 .counter-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  gap: 80px;
 }
 
 .counter {
   font-size: 4rem;
   font-weight: bold;
   margin: 0;
-  color: #4caf50;
+  color: #d17717;
 }
 .skill {
     display: flex;
