@@ -1,0 +1,507 @@
+<!--	
+    <div class="container">
+        <div class="mbr-row mbr-jc-c">
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 md-pb">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/3d-animation-character-sculpting.jpg" layout="responsive" height="191.297" width="347.9907883959044" alt="3d anime - rigged characters" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box mbr-p-5">
+                        <h4 class="mbr-section-title mbr-fonts-style align-left mbr-bold mbr-pb-1 display-7">
+                            3D animation</h4>
+                        <p class="mbr-text mbr-fonts-style align-left mbr-pb-1 display-4">
+                            <strong>Unleash the Power of Imagination with Mine Technologies 3D Animation Services</strong><br><br>
+
+At Mine Technologies, we bring stories to life through captivating 3D animations that engage, inform, and inspire. Our talented team of animators combines artistic creativity with cutting-edge technology to create stunning visual experiences that resonate with audiences.<br><br>
+
+
+                                                </div>
+                        <div class="mbr-section-btn align-left"><a class="btn btn-sm btn-black-outline display-4" id="anime" href="3D-animation.html">
+                                Learn More
+                            </a></div>
+                    </div> 
+        </div>
+
+	
+        	<div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 md-pb">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/internet-of-things-networking.png" layout="responsive" height="191.297" width="347.9907883959044" alt="smart homes and offices" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box mbr-p-5">
+                        <h4 class="mbr-section-title mbr-fonts-style align-left mbr-bold mbr-pb-1 display-7">
+                            Networking solutions</h4>
+                        <p class="mbr-text mbr-fonts-style align-left mbr-pb-1 display-4">
+                            <strong>Comprehensive Networking Solutions for Modern Businesses</strong><br><br>
+
+At Mine Technologies, understand that seamless connectivity is the backbone of any successful business. Our comprehensive networking services are designed to ensure that your operations run smoothly, efficiently, and securely. Our expert team is equipped to handle all aspects of networking, from design and installation to management and support.<br><br>
+
+                        </div>
+                        <div class="mbr-section-btn align-left"><a class="btn btn-sm btn-black-outline display-4" id="net" href="network.html">
+                                Learn More
+                            </a></div>
+                    </div> 
+        </div><br>
+        	
+        	<div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 last-child">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/Office_Security_installer.jpg" layout="responsive" height="191.297" width="347.9907883959044" alt="home and office security systems" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box mbr-p-5">
+                        <h4 class="mbr-section-title mbr-fonts-style align-left mbr-bold mbr-pb-1 display-7">
+                            Security Systems</h4>
+                        <p class="mbr-text mbr-fonts-style align-left mbr-pb-1 display-4">
+                            <strong>Advanced Security Solutions for Complete Protection</strong><br><br>
+
+At Mine Technologies, we recognize the critical importance of securing your business premises. Our comprehensive security systems services are designed to provide robust protection through state-of-the-art technologies, ensuring safety and peace of mind. Our expert team offers end-to-end solutions, from design and installation to ongoing management and support.<br><br>
+
+
+                        
+                        </div>
+                        <div class="mbr-section-btn align-left"><a class="btn btn-sm btn-black-outline display-4" id="sec" href="security.html">
+                                Learn More
+                            </a></div>
+                    </div>
+        </div>
+        </div><br>
+
+        
+       <div class="container">
+        <div class="mbr-row mbr-jc-c">
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 md-pb">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/head-shot-photography.jpg" layout="responsive" height="191.297" width="347.9907883959044" alt="full HD resolution - premium image editing" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    
+                    
+                     <br><br> 
+                    <div class="card-box mbr-p-5">
+                        <h4 class="mbr-section-title mbr-fonts-style align-left mbr-bold mbr-pb-1 display-7">
+                            Photography</h4>
+                        <p class="mbr-text mbr-fonts-style align-left mbr-pb-1 display-4">
+                            <strong>Capture the Moments that Matter with Mine Technologies Photography Services</strong><br><br>
+
+At Mine Technologies, we specialize in capturing the essence of every moment with stunning photography that tells your story. Our team of professional photographers combines technical expertise with an artistic eye to deliver high-quality images that leave a lasting impression.<br><br>
+
+
+  
+                        </div>
+                        <div class="mbr-section-btn align-left"><a class="btn btn-sm btn-black-outline display-4" id="photos" href="photography.html">
+                                Learn More
+                            </a></div>
+		</div>
+        </div> <br>
+        
+    
+     <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 md-pb">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/high-end-videos-creator.jpeg" layout="responsive" height="191.297" width="347.9907883959044" alt="5K video - editing" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box mbr-p-5">
+                        <h4 class="mbr-section-title mbr-fonts-style align-left mbr-bold mbr-pb-1 display-7">
+                            Videography</h4>
+                        <p class="mbr-text mbr-fonts-style align-left mbr-pb-1 display-4">
+                            <strong>Bring Your Vision to Life with Mine Technologies Videography Services</strong><br><br>
+
+At Mine Technologies, we create compelling videos that tell your story with clarity and emotion. Our skilled videographers blend creativity with technical expertise to produce high-quality videos that captivate and engage your audience. <br><br>
+
+
+                        
+                        </div>
+                        <div class="mbr-section-btn align-left"><a class="btn btn-sm btn-black-outline display-4" id="videos" href="videography.html">
+                                Learn More
+                            </a></div> 
+        </div>
+        </div><br>
+		    
+        <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 last-child">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/phone-repair-services.jpg" layout="responsive" height="191.297" width="347.9907883959044" alt="energy-drinks-in-uganda" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box mbr-p-5">
+                        <h4 class="mbr-section-title mbr-fonts-style align-left mbr-bold mbr-pb-1 display-7">
+                            Phone Repair</h4>
+                        <p class="mbr-text mbr-fonts-style align-left mbr-pb-1 display-4">
+                            <strong>Revive Your Device with our Phone Repair Services</strong><br><br>
+At Mine Technologies, we understand how crucial your phone is to your daily life. Our expert technicians are dedicated to providing fast, reliable, and affordable phone repair services to get you back up and running in no time. Whether it’s a cracked screen, battery issue, or software glitch, we’ve got you covered.<br><br>
+
+                        </div>
+                        <div class="mbr-section-btn align-left"><a class="btn btn-sm btn-black-outline display-4" id="phoneR" href="phone-repair.html">
+                                Learn More
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+        </div><br>
+
+	    <div class="container">
+        <div class="mbr-row mbr-jc-c">
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 md-pb">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/best-web-design-services.jpeg" layout="responsive" width="347.9953111888112" height="203.531" alt="cyber security- cyber attacks" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box mbr-p-5">
+                        <h4 class="mbr-section-title mbr-fonts-style align-left mbr-bold mbr-pb-1 display-7">
+                            Cyber Scurity</h4>
+                        <p class="mbr-text mbr-fonts-style align-left mbr-pb-1 display-4">
+                        	Defending Tomorrow’s Digital Frontier Today!<br><br>
+                            Whether you’re a startup handling sensitive data or an enterprise facing sophisticated threats, we deliver ironclad protection that evolves faster than cybercriminals. From real-time threat hunting to AI-driven compliance frameworks, our solutions don’t just shield your systems but future-proof your trust because in a world of zero-day exploits, your defense should always be one step ahead<br><br></p>
+
+ 
+                        <div class="mbr-section-btn align-left"><a class="btn btn-sm btn-black-outline display-4" id="cyber" href="cyber-security.html">
+                                Learn More
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 md-pb">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/software-development-experts.jpg" layout="responsive" height="231.812" width="347.9959520383693" alt="solar power - backup solutions" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box mbr-p-5">
+                        <h4 class="mbr-section-title mbr-fonts-style align-left mbr-bold mbr-pb-1 display-7">Power Solutions</h4>
+                        <p class="mbr-text mbr-fonts-style align-left mbr-pb-1 display-4">
+ Energy That Never Quits on You!<br><br>
+                            Whether you're a startup seeking energy independence or an enterprise optimizing power infrastructure, we deliver intelligent energy solutions engineered for reliability and growth. From solar-hybrid systems to AI-driven grid management, our technology empowers businesses to operate seamlessly today and tomorrow.<br><br></p>
+                        <div class="mbr-section-btn align-left"><a class="btn btn-sm btn-black-outline display-4" id="power" href="power-solutions.html">
+                                Learn More
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+
+           
+           <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 last-child">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <amp-img src="assets/images/computer-components-repairs.jpg" layout="responsive" width="347.9951515151515" height="202.656" alt="mangosunset_cocktail" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box mbr-p-5">
+                        <h4 class="mbr-section-title mbr-fonts-style align-left mbr-bold mbr-pb-1 display-7">
+                            Computer Repair</h4>
+                        <p class="mbr-text mbr-fonts-style align-left mbr-pb-1 display-4">
+                            <strong>Get Your Tech Back on Track with our Computer Repair Services</strong><br><br>
+At Mine Technologies, we know that when your computer goes down, it can disrupt your entire day. That’s why our team of expert technicians is dedicated to providing fast, reliable, and affordable computer repair services to get you back to work (or play) in no time.<br><br>
+
+</p>
+   
+                        </div>
+                        
+                        <div class="mbr-section-btn align-left"><a class="btn btn-sm btn-black-outline display-4" id="compR" href="comp-repair.html">
+                                Learn More
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+   
+    </div>
+</section>
+
+<section class="mbr-section 01 cid-tVGxDuKbbt" id="content1-m">
+
+    
+
+     <div class="container">
+        <div class="mbr-row mbr-jc-c">
+            <div class="mbr-col-sm-12 mbr-col-md-10">
+                <h2 class="mbr-section-title align-center mbr-fonts-style mbr-bold display-2">
+                    PRODUCTS</h2>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team1 mbr-section cid-tMstNTilB4" id="team1-a">
+
+    
+    
+    <div class="container">
+        <div class="mbr-row mbr-jc-c">
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 md-pb">
+                <div class="card-wrapper mbr-pt-5">
+                    <div class="card-img">
+                        <amp-img src="assets/images/enterprise-software-solutions.jpg" layout="responsive" width="348" height="348" alt="enterprise software solutions" class="mobirise-loader rounded mbr-m-auto">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box mbr-pt-4 mbr-px-4 mbr-pb-5">
+                        <h4 class="mbr-fonts-style mbr-section-subtitle align-center mbr-semibold display-4">SOFTWARE</h4>
+                        <h3 class="mbr-section-title mbr-bold mbr-fonts-style align-center mbr-pt-1 display-5 mbr-pb-2">SALES</h3>
+                        <p class="mbr-text mbr-fonts-style align-center display-4"><strong>Unlock Your Potential with Mine Technologies Software Solutions</strong><br><br>
+
+At Mine Technologies, we’re dedicated to providing cutting-edge software solutions that empower businesses and individuals to thrive in the digital age. From productivity tools to creative software, we offer a diverse range of products tailored to meet your specific needs.<br><br>
+</p>
+                  <a class="cart-plus btn btn-sm btn-black-outline display-4" href="products.html">                       
+                  <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+ <path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/>
+</svg> &nbsp;                    Order Now </a> 
+                        		</p>
+                        
+                    </div>
+                     
+                </div>
+            </div>
+            
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 md-pb">
+                <div class="card-wrapper mbr-pt-5">
+                    <div class="card-img">
+                        <amp-img src="assets/images/best-deals-laptops-and-accessories.jpg" layout="responsive" height="348" width="348" alt="gaming laptop deals" class="mobirise-loader rounded mbr-m-auto">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box mbr-pt-4 mbr-px-4 mbr-pb-5">
+                        <h4 class="mbr-fonts-style mbr-section-subtitle align-center mbr-semibold display-4">LAPTOPS<br>&</h4>
+                        <h3 class="mbr-section-title mbr-bold mbr-fonts-style align-center mbr-pt-1 display-5 mbr-pb-2">ACCESSORIES</h3>
+                        <p class="mbr-text mbr-fonts-style align-center display-4">
+                            <strong>Power Up Your Productivity with our Laptops and Accessories</strong><br><br>
+
+At Mine Technologies, we’re your one-stop destination for top-quality laptops and accessories that take your productivity to the next level. Whether you’re a student, professional, or tech enthusiast, we have the perfect computing solutions to meet your needs.<br><br></p>
+                            	
+               <a class="cart-plus btn btn-sm btn-black-outline display-4" href="products.html">  
+                 
+                  <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+  <path d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z"/>
+</svg> &nbsp;                    Laptop deals</a> 	
+                  
+                        		</p>
+                        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 last-child">
+                <div class="card-wrapper mbr-pt-5">
+                    <div class="card-img">
+                        <amp-img src="assets/images/best-smartphones-and-gadgets-deals.jpg" layout="responsive" height="348" width="348" alt="smartphones-phone-accessories" class="mobirise-loader rounded mbr-m-auto">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div></div>
+                            
+                        </amp-img>
+                    </div>
+                    <div class="card-box mbr-pt-4 mbr-px-4 mbr-pb-5">
+                        <h4 class="mbr-fonts-style mbr-section-subtitle align-center mbr-semibold display-4">PHONES<br>&</h4>
+                        <h3 class="mbr-section-title mbr-bold mbr-fonts-style align-center mbr-pt-1 display-5 mbr-pb-2">ACCESSORIES</h3>
+                        <p class="mbr-text mbr-fonts-style align-center display-4">
+                            <strong>Discover the Perfect Tech Companion at Mine Technologies</strong><br><br>
+
+At Mine Technologies, we're more than just a store – we're your destination for cutting-edge technology and stylish accessories that enhance your digital lifestyle. From the latest smartphones to trendy cases and gadgets, we offer a curated selection of products that combine innovation with style.<br><br></p>
+                   	  	
+               <a class="cart-plus btn btn-sm btn-black-outline display-4" href="products.html">  
+                 
+                  <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+  <path d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM144 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16zM304 64H80V384H304V64z"/>
+</svg> &nbsp;                    Phone deals </a> 
+
+                        		</p>     
+                    </div>
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+##Mine
+
+<section data-bs-version="5.1" class="article07 cid-lmmI9Ilz1i ">
+  		 <h2 class="mbr-section-title align-center mbr-fonts-style mbr-bold display-2">OUR PRICING</h2>
+        
+    <div class="row justify-content-center">
+      <div class="card col-md-12 col-lg-10 ">
+        <div class="card-wrapper-2 card-shadow">
+        
+          <center><div class="row justify-content-center mt-4">
+            <div class="card col-12 col-md-6">
+                <div class="card-wrapper">
+                    <div class="text-wrapper">
+    
+        		  <div class="col-12 form-group mb-3" data-for="amount">
+       <select id="category"  name="products" class="select" onchange="knowPricing()">
+        		<option value="none">Please select category</option>
+        		<option value="services">Services</option>
+        		<option value="products">Products</option>
+        		
+        	</select>
+        	</div> 
+                  
+                  
+                   <div class="col-12 form-group mb-3" data-for="amount">
+       <select id="catprompt"  name="prompt" class="select" required>
+        		<option value="none"> please select category</option>
+        		
+        	</select>
+        	</div> 
+        	
+        	      
+            <div class="col-12 form-group mb-3 service" data-for="amount">
+                        	
+        	<select  id="service" name="services" class="select never" onchange="updatePrice()">
+        		<option value="none">Choose service</option>
+        		
+        		<option value="web design">Web design</option>
+        		<option value="software development">Software development</option>
+        		<option value="graphics design">Graphics design</option>
+        		<option value="computer repair">Computer repair</option>
+        	<option value="phone repair">Phone repair</option>
+        	<option value="3D architecture">3D architecture</option>
+        	<option value="3D animation">3D animation</option>
+        	<option value="photography">Photography</option>
+        	<option value="videography">Videography</option>
+        		<option value="secretarial">Secretarial</option>
+        	<option value="consultancy">Consultancy</option>
+        	</select>
+        	</div> 
+        	
+ 
+        	
+        	<div class="col-12 form-group mb-3" data-for="amount">
+                        	
+        	<select id="product"  name="products" class="select never" onchange="updatePrice()" required>
+        		<option value="none">Choose product</option>
+        		<option value="software sales">Software sales</option>
+        		<option value="laptops & accessories">Laptops & Accessories</option>
+        		<option value="phones & accessories">Phones & accessories</option>
+        		
+        	</select>
+        	</div> 
+            <button id="tapMe" type="button" onclick="knowPricing()" class="btn btn-primary display-7">View Pricing</button></center>
+           <div>
+           
+           	
+           		<div class="container never" id="pricing"><hr>
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-10 m-auto">
+				<div class="content">
+					<div class="mbr-section-head align-left mb-5">
+						
+						<strong class="mbr-section-title mb-2 mbr-fonts-style display-4">
+							Starting
+							</strong><span>@</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							
+							<span class="liner label-text"><label id="cost">UGX <strong></strong>&nbsp;&nbsp;</label>&nbsp;&nbsp;</span>
+					</div>
+					
+									<h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-7 liner">
+										<span class="liner label-text"<label id="buy">Notice</label></span>
+									
+								</a>
+							</div>
+							
+								<div class="">
+									<p class="mbr-fonts-style display-7">
+										This price is only the starting point or a range so kindly be informed that it may change depending on your needs.<br><br></p>
+								</div>
+							</div>
+						</div>
+					
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+                  
+</section><br> -->
